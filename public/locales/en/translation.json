@@ -1,4 +1,8 @@
 {
     "title": "Push Swap Visualizer",
-    "subtitle": "Interactive sorting algorithm visualization"
+    "subtitle": "Interactive sorting algorithm visualization",
+    "numbers": "Numbers",
+    "operations": "Operations",
+     "placeholderOperations": "Enter operations here",
+    "submit": "Upload & Visualize"
 }

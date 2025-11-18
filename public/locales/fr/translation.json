@@ -1,4 +1,8 @@
 {
   "title": "Visualiseur Push Swap",
-  "subtitle": "Visualisation interactive de l'algorithme de tri"
+  "subtitle": "Visualisation interactive de l'algorithme de tri",
+  "numbers": "Nombres",
+  "operations": "Opérations",
+  "placeholderOperations": "Entrez les opérations ici",
+    "submit": "Télécharger et visualiser"
 }
