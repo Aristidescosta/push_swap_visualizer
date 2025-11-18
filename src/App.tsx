@@ -1,10 +1,12 @@
+import { Header } from "./components/header/Header";
 
 function App() {
 
   return (
     <>
+      <Header />
       <main className="min-h-screen">
-        <h1>Push swap visualizer</h1>
+
       </main>
     </>
   );
