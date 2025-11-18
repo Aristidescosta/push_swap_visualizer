@@ -1,14 +1,16 @@
+
+import { AppWrapper } from "./components/AppWrapper";
 import { Header } from "./components/header/Header";
 
 function App() {
 
   return (
-    <>
+    <AppWrapper>
       <Header />
-      <main className="min-h-screen">
+      <main>
 
       </main>
-    </>
+    </AppWrapper>
   );
 }
 
