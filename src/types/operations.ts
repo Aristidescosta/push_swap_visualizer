@@ -8,4 +8,14 @@ export interface StackItem {
     color: string;
 }
 
+export interface OperationTimelineProps {
+  operations: string[];
+  currentOp: number;
+  setCurrentOp: (step: number) => void;
+  t: {
+    operationTimeline: string;
+  };
+}
+
+
 export type Operation = string;
