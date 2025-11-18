@@ -2,7 +2,13 @@
   "title": "Visualizador Push Swap",
   "subtitle": "Visualização interativa do algoritmo de ordenação",
   "numbers": "Números",
+  "operations": "Operações",
+  "placeholderOperations": "Insira as operações aqui",
+  "submit": "Carregar e visualizar",
+  "stats": {
     "operations": "Operações",
-    "placeholderOperations": "Insira as operações aqui",
-    "submit": "Carregar e visualizar"
+    "progress": "Progresso",
+    "stackA": "Pilha A",
+    "stackB": "Pilha B"
+  }
 }

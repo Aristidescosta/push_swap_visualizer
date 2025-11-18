@@ -4,5 +4,11 @@
   "numbers": "Nombres",
   "operations": "Opérations",
   "placeholderOperations": "Entrez les opérations ici",
-    "submit": "Télécharger et visualiser"
+  "submit": "Télécharger et visualiser",
+  "stats": {
+    "operations": "Opérations",
+    "progress": "Progrès",
+    "stackA": "Pile A",
+    "stackB": "Pile B"
+  }
 }

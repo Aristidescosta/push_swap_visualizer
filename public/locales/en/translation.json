@@ -3,6 +3,12 @@
     "subtitle": "Interactive sorting algorithm visualization",
     "numbers": "Numbers",
     "operations": "Operations",
-     "placeholderOperations": "Enter operations here",
-    "submit": "Upload & Visualize"
+    "placeholderOperations": "Enter operations here",
+    "submit": "Upload & Visualize",
+    "stats": {
+        "operations": "Operations",
+        "progress": "Progress",
+        "stackA": "Stack A",
+        "stackB": "Stack B"
+    }
 }
