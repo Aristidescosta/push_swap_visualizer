@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { Language } from "../types/language";
+import i18next from "i18next";
 
 
 export const useLanguage = () => {
@@ -11,6 +12,7 @@ export const useLanguage = () => {
   const changeLanguage = (lang: Language) => {
     setLanguage(lang);
     localStorage.setItem("language", lang);
+    i18next.changeLanguage(lang);
   };
 
   return { language, changeLanguage };
