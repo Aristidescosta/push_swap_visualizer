@@ -10,5 +10,13 @@
         "progress": "Progress",
         "stackA": "Stack A",
         "stackB": "Stack B"
-    }
+    },
+    "step": "Step",
+  "sorted": "Sorted!",
+  "opDescriptions": {
+    "sa": "Swap top two elements of stack A",
+    "pb": "Push top element from stack A to B",
+    "ra": "Rotate stack A upwards",
+    "pa": "Push top element from stack B to A"
+  }
 }

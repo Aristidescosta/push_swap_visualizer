@@ -10,5 +10,13 @@
     "progress": "Progrès",
     "stackA": "Pile A",
     "stackB": "Pile B"
+  },
+  "step": "Étape",
+  "sorted": "Trié !",
+  "opDescriptions": {
+    "sa": "Échanger les deux éléments du sommet de la pile A",
+    "pb": "Déplacer l'élément du sommet de la pile A vers B",
+    "ra": "Faire tourner la pile A vers le haut",
+    "pa": "Déplacer l'élément du sommet de la pile B vers A"
   }
 }

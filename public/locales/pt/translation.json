@@ -10,5 +10,13 @@
     "progress": "Progresso",
     "stackA": "Pilha A",
     "stackB": "Pilha B"
+  },
+  "step": "Passo",
+  "sorted": "Ordenado!",
+  "opDescriptions": {
+    "sa": "Trocar os dois elementos do topo da pilha A",
+    "pb": "Mover o elemento do topo da pilha A para B",
+    "ra": "Rotacionar a pilha A para cima",
+    "pa": "Mover o elemento do topo da pilha B para A"
   }
 }
