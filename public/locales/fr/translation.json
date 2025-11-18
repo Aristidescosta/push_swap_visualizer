@@ -3,20 +3,37 @@
   "subtitle": "Visualisation interactive de l'algorithme de tri",
   "numbers": "Nombres",
   "operations": "Opérations",
-  "placeholderOperations": "Entrez les opérations ici",
-  "submit": "Télécharger et visualiser",
+  "placeholderOperations": "pa\npb\nsa\nra\nrra",
+  "loadAndVisualize": "Charger et visualiser",
+  "step": "Étape",
+  "sorted": "Trié !",
   "stats": {
     "operations": "Opérations",
     "progress": "Progrès",
     "stackA": "Pile A",
-    "stackB": "Pile B"
+    "stackB": "Pile B",
+    "items": "éléments"
   },
-  "step": "Étape",
-  "sorted": "Trié !",
+  "controls": {
+    "reset": "Réinitialiser",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "play": "Lire",
+    "pause": "Pause",
+    "speed": "Vitesse",
+    "operationTimeline": "Chronologie des Opérations"
+  },
   "opDescriptions": {
-    "sa": "Échanger les deux éléments du sommet de la pile A",
-    "pb": "Déplacer l'élément du sommet de la pile A vers B",
-    "ra": "Faire tourner la pile A vers le haut",
-    "pa": "Déplacer l'élément du sommet de la pile B vers A"
+    "sa": "Échanger les 2 premiers éléments en haut de la pile A",
+    "sb": "Échanger les 2 premiers éléments en haut de la pile B",
+    "ss": "sa et sb en même temps",
+    "pa": "Prendre le premier élément en haut de B et le mettre en haut de A",
+    "pb": "Prendre le premier élément en haut de A et le mettre en haut de B",
+    "ra": "Faire pivoter tous les éléments de la pile A vers le haut (le premier devient dernier)",
+    "rb": "Faire pivoter tous les éléments de la pile B vers le haut (le premier devient dernier)",
+    "rr": "ra et rb en même temps",
+    "rra": "Faire pivoter tous les éléments de la pile A vers le bas (le dernier devient premier)",
+    "rrb": "Faire pivoter tous les éléments de la pile B vers le bas (le dernier devient premier)",
+    "rrr": "rra et rrb en même temps"
   }
 }

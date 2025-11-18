@@ -1,8 +1,8 @@
 interface StatCardProps {
   label: string;
   value?: number | string;
-  valueColor?: string; // opcional: ex: "text-blue-500"
-  children?: React.ReactNode; // conteúdo customizado
+  valueColor?: string;
+  children?: React.ReactNode;
 }
 
 export const StatCard = ({ label, value, valueColor, children }: StatCardProps) => {

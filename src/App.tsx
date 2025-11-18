@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { AppWrapper } from "./components/AppWrapper";
@@ -10,29 +9,27 @@ import { StacksGrid } from "./components/StacksGrid";
 import { Controls } from "./components/Controls";
 import { OperationTimeline } from "./components/OperationTimeline";
 
-import type { OperationState, StackItem } from "./types/operations";
+import { usePushSwap } from "./hooks/usePushSwap";
 
 function App() {
   const { t: translate } = useTranslation();
-
-  const operations = ["sa", "pb", "ra", "pa"];
-  const [currentOp, setCurrentOp] = useState(1);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [speed, setSpeed] = useState(500);
-
-  const currentState: OperationState = {
-    a: [
-      { value: 5, color: "#3b82f6" },
-      { value: 2, color: "#10b981" },
-      { value: 4, color: "#f59e0b" },
-    ],
-    b: [
-      { value: 1, color: "#ef4444" },
-      { value: 3, color: "#8b5cf6" },
-    ],
-  };
-
-  const animatingItem = { from: "a" as const, to: "b" as const };
+  
+  const {
+    currentState,
+    operations,
+    currentOp,
+    isPlaying,
+    speed,
+    animatingItem,
+    setCurrentOp,
+    setIsPlaying,
+    setSpeed,
+    initializeStacks,
+    nextStep,
+    prevStep,
+    reset,
+    isSorted
+  } = usePushSwap();
 
   const t = {
     stackA: translate("stats.stackA"),
@@ -47,17 +44,6 @@ function App() {
     operationTimeline: translate("controls.operationTimeline"),
   };
 
-  const isSorted = (arr: StackItem[]) =>
-    arr.every((item, i) => i === 0 || arr[i - 1].value <= item.value);
-
-  const reset = () => setCurrentOp(0);
-  const prevStep = () => {
-    if (currentOp > 0) setCurrentOp(prev => prev - 1);
-  };
-  const nextStepHandler = () => {
-    if (currentOp < operations.length) setCurrentOp(prev => prev + 1);
-  };
-
   return (
     <AppWrapper>
       <Header />
@@ -65,8 +51,7 @@ function App() {
       <main className="max-w-7xl mx-auto p-4 md:p-8 flex flex-col gap-6">
         <FormCard
           onSubmit={(numbers, ops) => {
-            console.log("Números:", numbers);
-            console.log("Operações:", ops);
+            initializeStacks(numbers, ops);
           }}
         />
 
@@ -102,7 +87,7 @@ function App() {
           setSpeed={setSpeed}
           reset={reset}
           prevStep={prevStep}
-          nextStep={nextStepHandler}
+          nextStep={nextStep}
           t={t}
         />
 

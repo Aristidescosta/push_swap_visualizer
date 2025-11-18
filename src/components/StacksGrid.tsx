@@ -4,7 +4,7 @@ import { type OperationState } from "../types/operations";
 
 interface StacksGridProps {
   currentState: OperationState;
-  animatingItem?: { from: 'a' | 'b'; to: 'a' | 'b' };
+  animatingItem?: { from: 'a' | 'b'; to: 'a' | 'b' } | null;
   currentOp: number;
   t: any;
 }

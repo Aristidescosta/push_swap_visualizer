@@ -3,20 +3,37 @@
   "subtitle": "Visualização interativa do algoritmo de ordenação",
   "numbers": "Números",
   "operations": "Operações",
-  "placeholderOperations": "Insira as operações aqui",
-  "submit": "Carregar e visualizar",
+  "placeholderOperations": "pa\npb\nsa\nra\nrra",
+  "loadAndVisualize": "Carregar e visualizar",
+  "step": "Passo",
+  "sorted": "Ordenado!",
   "stats": {
     "operations": "Operações",
     "progress": "Progresso",
     "stackA": "Pilha A",
-    "stackB": "Pilha B"
+    "stackB": "Pilha B",
+    "items": "itens"
   },
-  "step": "Passo",
-  "sorted": "Ordenado!",
+  "controls": {
+    "reset": "Resetar",
+    "previous": "Anterior",
+    "next": "Próximo",
+    "play": "Executar",
+    "pause": "Pausar",
+    "speed": "Velocidade",
+    "operationTimeline": "Linha do Tempo das Operações"
+  },
   "opDescriptions": {
-    "sa": "Trocar os dois elementos do topo da pilha A",
-    "pb": "Mover o elemento do topo da pilha A para B",
-    "ra": "Rotacionar a pilha A para cima",
-    "pa": "Mover o elemento do topo da pilha B para A"
+    "sa": "Troca os 2 primeiros elementos do topo da pilha A",
+    "sb": "Troca os 2 primeiros elementos do topo da pilha B",
+    "ss": "sa e sb ao mesmo tempo",
+    "pa": "Pega o primeiro elemento do topo de B e coloca no topo de A",
+    "pb": "Pega o primeiro elemento do topo de A e coloca no topo de B",
+    "ra": "Rotaciona todos os elementos da pilha A para cima (primeiro vira último)",
+    "rb": "Rotaciona todos os elementos da pilha B para cima (primeiro vira último)",
+    "rr": "ra e rb ao mesmo tempo",
+    "rra": "Rotaciona todos os elementos da pilha A para baixo (último vira primeiro)",
+    "rrb": "Rotaciona todos os elementos da pilha B para baixo (último vira primeiro)",
+    "rrr": "rra e rrb ao mesmo tempo"
   }
 }

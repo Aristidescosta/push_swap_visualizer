@@ -1,22 +1,39 @@
 {
-    "title": "Push Swap Visualizer",
-    "subtitle": "Interactive sorting algorithm visualization",
-    "numbers": "Numbers",
-    "operations": "Operations",
-    "placeholderOperations": "Enter operations here",
-    "submit": "Upload & Visualize",
-    "stats": {
-        "operations": "Operations",
-        "progress": "Progress",
-        "stackA": "Stack A",
-        "stackB": "Stack B"
-    },
-    "step": "Step",
+  "title": "Push Swap Visualizer",
+  "subtitle": "Interactive visualization of the sorting algorithm",
+  "numbers": "Numbers",
+  "operations": "Operations",
+  "placeholderOperations": "pa\npb\nsa\nra\nrra",
+  "loadAndVisualize": "Load and Visualize",
+  "step": "Step",
   "sorted": "Sorted!",
+  "stats": {
+    "operations": "Operations",
+    "progress": "Progress",
+    "stackA": "Stack A",
+    "stackB": "Stack B",
+    "items": "items"
+  },
+  "controls": {
+    "reset": "Reset",
+    "previous": "Previous",
+    "next": "Next",
+    "play": "Play",
+    "pause": "Pause",
+    "speed": "Speed",
+    "operationTimeline": "Operation Timeline"
+  },
   "opDescriptions": {
-    "sa": "Swap top two elements of stack A",
-    "pb": "Push top element from stack A to B",
-    "ra": "Rotate stack A upwards",
-    "pa": "Push top element from stack B to A"
+    "sa": "Swap the first 2 elements at the top of stack A",
+    "sb": "Swap the first 2 elements at the top of stack B",
+    "ss": "sa and sb at the same time",
+    "pa": "Take the first element at the top of B and put it at the top of A",
+    "pb": "Take the first element at the top of A and put it at the top of B",
+    "ra": "Shift up all elements of stack A by 1 (first becomes last)",
+    "rb": "Shift up all elements of stack B by 1 (first becomes last)",
+    "rr": "ra and rb at the same time",
+    "rra": "Shift down all elements of stack A by 1 (last becomes first)",
+    "rrb": "Shift down all elements of stack B by 1 (last becomes first)",
+    "rrr": "rra and rrb at the same time"
   }
 }

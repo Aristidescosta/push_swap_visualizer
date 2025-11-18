@@ -10,9 +10,9 @@ interface FormCardProps {
 }
 
 export const FormCard = ({ onSubmit }: FormCardProps) => {
-  const [numbers, setNumbers] = useState("");
-  const [operations, setOperations] = useState("");
-  const {  t} = useTranslation();
+  const [numbers, setNumbers] = useState("5 2 4 1 3");
+  const [operations, setOperations] = useState("rra\nrra\npb\nra\nra\npb\nsa\npa\npa");
+  const { t } = useTranslation();
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -42,10 +42,10 @@ export const FormCard = ({ onSubmit }: FormCardProps) => {
       </div>
       <button
         type="submit"
-        className="px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 active:bg-blue-800 transition-all flex items-center gap-2 shadow-sm hover:shadow-md"
+        className="px-6 py-2.5 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 active:bg-blue-800 transition-all flex items-center gap-2 shadow-sm hover:shadow-md active:scale-95"
       >
         <Upload className="w-4 h-4" />
-        Carregar e visualizar
+        {t("loadAndVisualize") || "Carregar e visualizar"}
       </button>
     </form>
   );
